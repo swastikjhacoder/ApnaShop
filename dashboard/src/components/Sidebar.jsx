@@ -21,14 +21,14 @@ const Sidebar = ({ children }) => {
       icon: <CategoryOutlinedIcon />,
     },
     {
-      name: "Customer",
-      path: "/customer",
-      icon: <AccountCircleOutlinedIcon />,
-    },
-    {
       name: "Products",
       path: "/products",
       icon: <Inventory2OutlinedIcon />,
+    },
+    {
+      name: "Customer",
+      path: "/customer",
+      icon: <AccountCircleOutlinedIcon />,
     },
     {
       name: "Vendor",
