@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --sidebar-color: #314052;
+    --sidebar-menu-color: #fff;
+    --body-background: #e7ecee;
+    --text-dark: #4f5a64;
+    --text-light: #798a9a;
+    --button-red: #892020;
+    --button-green: #064120;
+    --button-blue: #070783;
+
+    --line-height: 1.5rem;
+    --letter-spacing: 1px;
+    --normal-font: 16px;
+    --small-font: 14px;
+    --smaller-font: 12px;
+    --tiny-font: 10px;
+    --h1-font-size: 26px;
+    --h2-font-size: 24px;
+    --h3-font-size: 22px;
+    --h4-font-size: 20px;
+
+    --bold-font-weight: 600;
+    --normal-font-weight: 400;
+    --box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    line-height: var(--line-height);
+    letter-spacing: var(--letter-spacing);
+    font-family: 'Poppins' sans-serif;
+    text-decoration: none;
+}
+
+body{
+    background: var(--body-background);
+    color: var(--text-dark);
+}
+
+main {
+    width: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    background: var(--sidebar-color);
+    color:var(--sidebar-menu-color);
+    height: 64px;
+    padding: var(--h4-font-size);
+}
+
+/* Sidebar ----------------------------------------- */
+.sidebar-container {
+    display: flex;
+}
+
+.sidebar {
+    background: var(--sidebar-color);
+    color: var(--sidebar-menu-color);
+    height: 100vh;
+    width: max-content;
+    transition: all .5s;
+}
+
+.sidebar-header {
+    display: flex;
+    align-items: center;
+    padding: var(--h4-font-size) 15px;
+}
+
+.logo {
+    font-size: 30px;
+}
+
+.bars {
+    display: flex;
+    font-size: 25px;
+    margin-left: var(--h4-font-size);
+    cursor: pointer;
+}
+
+.link {
+    display: flex;
+    color: var(--sidebar-menu-color);
+    padding: 10px 15px;
+    gap: 15px;
+    transition: all.5s;
+}
+
+.link:hover {
+    background: var(--body-background);
+    color: var(--text-dark);
+    transition: all .5s;
+}
+
+.active {
+    background: var(--body-background);
+    color: var(--text-dark);
+}
+
+.icon,
+.link-text {
+    font-size: var(--h4-font-size);
+}
+
+header .logout button{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background:transparent;
+    font-size: var(--h4-font-size);
+    color:var(--sidebar-menu-color);
+    border: none;
+    cursor: pointer;
+}
+
+/* Category Page---------------------------------------------------------------------------------------- */
+.category-container{
+    padding: 20px;
+}
